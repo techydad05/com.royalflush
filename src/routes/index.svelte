@@ -1,4 +1,4 @@
-<div class="w-full max-w-screen-lg m-auto">
+<div class="w-full max-w-screen-lg m-auto h-screen align-middle flex bg-[#070c1b]">
     <video src="/royalflushlogo_new.mp4" width="100%" autoplay playsinline muted></video>
 </div>
 
