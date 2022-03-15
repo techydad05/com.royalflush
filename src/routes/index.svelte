@@ -3,16 +3,16 @@
     <h1 class="text-2xl font-extrabold text-center p-4">See Whats Coming..</h1>
     <div class="carousel carousel-center">
     <div class="carousel-item pr-2">
-        <img width="400px" src="/IMG_2497.jpeg" alt="open gummies" />
+        <img width="400px" src="/IMG_2497.png" alt="open gummies" />
     </div> 
     <div class="carousel-item pr-2">
-        <img width="400px" src="/IMG_2496.jpeg" alt="gummies" />
+        <img width="400px" src="/IMG_2496.png" alt="gummies" />
     </div>
     <div class="carousel-item pr-2">
-        <img width="400px" src="/IMG_2505.jpeg" alt="gummies" />
+        <img width="400px" src="/IMG_2505.png" alt="gummies" />
     </div>
     <div class="carousel-item pr-2">
-        <img width="400px" src="/IMG_2507.jpeg" alt="gummies" />
+        <img width="400px" src="/IMG_2507.png" alt="gummies" />
     </div>
     </div>
 </div>
