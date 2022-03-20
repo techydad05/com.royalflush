@@ -1,10 +1,6 @@
 <script>
-    import { createClient } from  "../client.js";
-    import { onMount } from "svelte";
-    onMount(() => {
-        const client = createClient();
-        console.log(client)
-    });
+    import { getProducts, productStore } from "../stores/productStore";
+    getProducts();
     let modalOpen = false;
     const images = [
         {
@@ -26,14 +22,18 @@
     ]
     const openImage = (e) => {
         console.log(e.target.src)
+        modalOpen = !modalOpen;
     }
 </script>
+<!-- {#each $productStore as product}
+    <img src={product.thumbnail} width="400px" alt={""} />
+{/each} -->
 <div class="bg-[#070c1b]">
     <video src="/royalflushlogo_new.mp4" width="100%" autoplay playsinline muted></video>
     <div class="carousel carousel-center">
-        {#each images as img}
-            <div on:click={(e) => openImage(e)} class="carousel-item">
-            <img src={img.src} width="400px" alt={img.alt} />
+        {#each $productStore as product}
+            <div on:click={(e) => openImage(e)} class="carousel-item p-4">
+            <img src={product.thumbnail} width="300px" alt={""} />
             </div> 
         {/each}
       </div>
